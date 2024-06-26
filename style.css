@@ -1,0 +1,113 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: #2B1821;
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+body *{
+    box-sizing: border-box;
+}
+nav, footer{
+    background-color: #212430;
+    height:80px;
+    padding:10px;
+    color: white;
+    box-shadow: 0px 0px 20px -10px #212430;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    margin-left:5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px;
+}
+nav a:hover{
+    background-color: color-mix(in srgb, #212430 75%, gray 25%);
+}
+footer{
+    text-align: right;
+}
+p{
+    font-size: 0.8em;
+}
+
+div.principal{
+    padding:50px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    height:calc(100vh - 160px);
+}
+div.principal .cima{
+    background-color: #212430;
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+}
+div.principal h2{
+    height:2rem;
+}
+div.principal label{
+    color: #212430;
+    margin-bottom: 5px;
+}
+div.principal div div{
+    background-color:aliceblue;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+div.principal>*{
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    color: aliceblue;
+    text-align: center;
+    max-width: 25vw;
+    width:100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-height: calc(100vh - 260px);
+}
+.opcoes, .entrada, .saida{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+textarea{
+    max-width: 25vw;
+    aspect-ratio: 1 / 1;/* não entendi porque não funcionou */
+    box-shadow:0px 0px 25px -20px grey inset;
+    background-color:lavender;
+    resize:none;
+    border:none;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 8px;
+    padding:5px;
+    outline: none;
+}
+.opcoes div.box{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height:100px;
+}

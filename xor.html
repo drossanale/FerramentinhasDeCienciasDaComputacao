@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ferramentinhas de Ciências da Computer</title>
+    <script src="includehtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- NAV AUTOMÁTICO -->
+    <div w3-include-html="nav"></div>
+
+    <div class="principal">
+        <div class="entrada">
+            <h2>Entrada</h2>
+            <div class="box">
+                <label for="input">Texto a ser convertido:</label>
+                <textarea name="input" id="input"></textarea>
+            </div>
+        </div>
+        <div class="opcoes">
+            <div class="cima">XOR</div>
+            <div class="box">
+                <label for="opcoes">Chave:</label>
+                <textarea name="opcoes" id="xor"></textarea>
+            </div>
+        </div>
+        <div class="saida">
+            <h2>Saída</h2>
+            <div class="box">
+                <label for="output">Texto já convertido:</label>
+                <textarea name="output" id="output" readonly></textarea>
+            </div>
+        </div>
+
+    </div>
+    <!-- FOOTER AUTOMÁTICO -->
+    <div w3-include-html="footer"></div>
+    <script>modo = "xor"</script>
+    <script src="scriptferramentas.js"></script>
+</body>
+</html>
